@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="images/1x/Hover - ActiveIcon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js"></script>
+    <title>FoodBlogger</title>
+</head>
+<body>
+    <header>
+		   <nav class="mainNavigation">
+			<div class="logo" id="header-logo">
+                <img src="../Food blog/images/1x/Logo Image.png" alt="logo">
+            </div>
+            <form method="POST" action="#" class="search-txt hidding" id="search-txt" >
+                <a><img src="../Food blog/images/1x/search-icon Image.png"  alt="search-icon"></a>
+                <input  type="search" placeholder="Search for recipes and blog posts..."/> 
+            </form>
+            <ul id="ul1">
+		        <li><a href="#">Home</a></li>
+		    	<li><a href="#">Chef inspiration</a></li>
+		    	<li><a href="#">Recipes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="search" id="search" onclick="showHide()"><img src="../Food blog/images/1x/search-icon Image.png"  alt="search-icon"></button>
+            
+            <button class="nav-icon" onclick="expandNav()"><img src="images/1x/menu Image.png" alt=""></button>
+        </nav>
+         <div class="click-nav mobile" id="click-nav">
+             <ul id="ul2">
+                <li><a href="#">Home</a></li>
+		    	<li><a href="#">Chef inspiration</a></li>
+		    	<li><a href="#">Recipes</a></li>
+                <li><a href="#">Contact</a></li>
+             </ul>
+         </div>   
+		<div class="main-content">
+            <bg-image></bg-image>
+            <h1>It's time for <br>Cooking!</h1>
+            <br><br><br>
+            <p>Do you want to get something delicius, special<br> and healthy?
+            We are sincerely for your service.<br>
+            Welcome your arrival! </p>
+            <br><br><br>
+            <a href="#" class="btn">Go to recipes</a>
+            <br><br><br><br>
+        </div> 
+        <div class="chef">
+            <img src="images/1x/illustration Image.png" alt="#">
+        </div>
+    </header>
+    <section class="first-section">
+        <h1 class="first">We offer you Best & Delicious food</h1>
+        <p class="p-shade">Creative social proof finders paradigm shift strategy innovator</p>
+         <ul>
+         <li onclick="selecting(3)"  class="selector"  id="s1"><a>1. Brekfast</a></li>
+         <li onclick="selecting(1)" class="selector shadow" id="s2"><a>2. Lunch</a></li>
+         <li onclick="selecting(2)" class="selector shadow" id="s3"><a>3. Dinner</a></li>
+         </ul>
+        <div class="recipt activate" id="recipt1">
+            <h1>Our best <br>Brekfast recipes</h1>
+            <br><br>
+            <p>Breakfast is the most important meal of the day; choose from homemade<br>
+                waffles, granola, corned beef hash, pancakes, omlets or cinnamon buns.<br><br>
+               Jump start your day with these top-rated breakfast recipes. Whether it's <br>
+               something savor or little sweet, we've got you covered with this nourishing<br>
+               round up.
+            </p>
+            <br><br><br>
+            <a href="#" class="btn">Go to recipes</a>
+        </div>
+
+        <div class="recipt" id="recipt2">
+            <h1>Our best <br>Lunch recipes</h1>
+            <br><br>
+            <p>Breakfast is the most important meal of the day; choose from homemade<br>
+                waffles, granola, corned beef hash, pancakes, omlets or cinnamon buns.<br><br>
+               Jump start your day with these top-rated breakfast recipes. Whether it's <br>
+               something savor or little sweet, we've got you covered with this nourishing<br>
+               round up.
+            </p>
+            <br><br><br>
+            <a href="#" class="btn">Go to recipes</a>
+        </div>
+
+        <div class="recipt" id="recipt3">
+            <h1>Our best <br>Dinner recipes</h1>
+            <br><br>
+            <p>Breakfast is the most important meal of the day; choose from homemade<br>
+                waffles, granola, corned beef hash, pancakes, omlets or cinnamon buns.<br><br>
+               Jump start your day with these top-rated breakfast recipes. Whether it's <br>
+               something savor or little sweet, we've got you covered with this nourishing<br>
+               round up.
+            </p>
+            <br><br><br>
+            <a href="#" class="btn">Go to recipes</a>
+        </div>
+
+        <div class="chef2">
+            <img src="../Food blog/images/1x/cheef2.png" alt="#">
+        </div>
+        </section>
+        <section class="scnd-section">
+            <h1 class="first">What Our Users Say</h1>
+            <br><br>
+            <div class="carousel">
+            
+            <div class="slider" id="slider">
+
+                
+                <div class="slide-item active" id="item1">
+                <figure><img src="../Food blog/images/1x/shape + image.png" alt="#"></figure>
+                <div><h3>Carrie Gordon</h3>
+                <p>NOVI SAD, SERBIA</p>
+            <br><br></div>
+                <div class="comment">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum blanditiis,
+                       praesentium quo officiis, numquam aperiam nam vero officia rem beatae vitae, placeat dolorem quod optio maxime. 
+                       Eum ex reprehenderit ipsam?"</p>
+                       <br>
+                </div>
+                 </div>
+
+                 <div class="slide-item" id="item2">
+                    <figure><img src="../Food blog/images/1x/shape + image.png" alt="#"></figure>
+                    <div id="title"><h3>Carrie Gordon</h3>
+                    <p>BEOGRAD, SERBIA</p>
+                <br><br></div>
+                    <div class="comment">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum blanditiis,
+                           praesentium quo officiis, numquam aperiam nam vero officia rem beatae vitae, placeat dolorem quod optio maxime. 
+                           Eum ex reprehenderit ipsam?"</p>
+                           <br>
+                    </div>
+                     </div>
+                    </div>
+
+                    <button class="arrowRight" id="arrowRight" onclick="goRight()"><img src="../Food blog/images/1x/Hover - Active (3).png" alt="#" >
+                </button>
+                <button class="arrowLeft shade" id="arrowLeft" onclick="goLeft()" ><img src="../Food blog/images/1x/Hover - Active (2).png" alt="#">
+                </button>
+        
+            </div>
+
+        </section>
+        <section class="thrd-section">
+            <h1 class="first">Our latest recipes </h1>
+            <a class="show-all"href="#">Show all recipes</a>
+            <div class="container">
+                <div class="box" id="box-1">
+                    <img src="images/1x/shape copy + recipe1.png" alt="#">
+                    <p id="orange"><b>SNACKS</b></p>
+                    <h3>Spanish Tortila<br></h3>
+                    <br>
+                    <div class="icons">
+                    <p class="icon-efect"><img src="images/1x/Hover - Active (4).png" alt="#">
+                    20 - 30 min</p>
+                    <p class="icon-efect" id="right">12
+                    <img src="images/1x/Hover - Active (5).png" alt="#" >
+                    </p>
+                </div>
+                </div>
+                <div class="box" id="box-2">
+                 <img src="images/1x/shape copy + recipe2 Image.png" alt="#">
+                 <a class="green-mark" id="green-mark-1">TRENDING</a>
+                    <p id="orange"><b>BREAKFAST</b></p>
+                     <h3>Healthy oaty fruity<br>cereal</h3>
+                    <div class="icons">
+                        <p class="icon-efect"><img src="images/1x/Hover - Active (4).png" alt="#">
+                        20 - 30 min</p>
+                        <p class="icon-efect" id="right">12
+                        <img src="images/1x/Hover - Active (5).png" alt="#" >
+                        </p>
+                    </div></div>
+                <div class="box" id="box-3"><img src="images/1x/shape copy + recipe3 Image.png" alt="#">
+                    <p id="orange"><b>SAUCES</b></p>
+                    <h3>Cheat's cranberry<br>sauce</h3>
+                    <div class="icons">
+                    <p class="icon-efect"><img src="images/1x/Hover - Active (4).png" alt="#">
+                        20 - 30 min</p>
+                        <p class="icon-efect" id="right">12
+                        <img src="images/1x/Hover - Active (5).png" alt="#" >
+                    </p>
+                </div></div>
+                <div class="box" id="box-4">
+                    <background-image></background-image>
+                    <p>START COOKING!</p>
+                    <h2>Check other<br>reciepes</h2>
+                    <br><br>
+                </div>
+            </div>
+        </section>
+        <section class="fourth-section">
+            <div class="article">
+            <a class="green-mark">POPULAR THIS WEEK</a>
+            <h1>Hummus with Spiced<br>Summer Squash and Lamb</h1>
+            <p>
+             If you're making this hummus recipe for a finicky crowd, serve all the toppings in <br>
+             separate bowls and let people help themselves. Lot of toasted pita for scooping up<br>
+             everything is nonnegotiable.   
+            </p>
+            <h3>Ingridients</h3><br>
+            <div class="list-block">
+              <h4>Lamb & Assembly</h4><br>
+              <p class="list">
+                - 2 tsp. kosher salt <br>
+                - 1<small><sup>1</sup></small>/<small>2</small> tsp. ground coriander <br>
+                - 1<small><sup>1</sup></small>/<small>2</small> tsp. ground cumin <br>
+                - <small><sup>1</sup></small>/<small>4</small> tsp. crushed red pepper flakes <br>
+                - 2 tsp. extra-virgin olive oil, divided
+              </p>
+        </div>
+        <div class="list-block" id="middle">
+          <h4>Hummus</h4><br>
+          <p class="list" > 
+                - 2 15.5-oz. cans chickpeas, rinsed <br>
+                - 1 garlic clove, coarsely choped <br>
+                - <small><sup>1</sup></small>/<small>2</small>cup tahini <br>
+                - 3 Tbsp. fresh lemon juice <br>
+                - 1<small><sup>1</sup></small>/<small>4</small> tsp. kosher salt
+          </p> 
+        </div>
+        </div>
+        <div id="side-img">
+            <img src="images/1x/dish-img.png" alt="#">
+        </div>
+        <a href="#" class="btn" id="btn-2">Read full recipe</a>
+        <img src="images/1x/Partners.png" alt="#" id="partners">
+        <img src="images/1x/Partners_mob.png" alt="" id="mob-partners">
+    </section>
+    <section class="footer">
+        <div id="footer-content">
+        <div class="logo" id="footer-logo">
+            <img src="../Food blog/images/1x/Logo Image.png" alt="logo">
+        </div>
+            <p class="paragraf">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+             Saepe laboriosam excepturi, voluptatem consectetur <br>
+             accusamus ipsum porro. Harum ab dolore eos recusandae <br>
+             voluptatibus eius inventore blanditiis maiores laudantium <br>
+             exercitationem, fugit omnis.
+            </p><br><br>
+            <a  href="#" id="tel">T: (+61) 979 185 942</a> <br>
+            <a  href="#" id="mail">E: contact@foodblogger.com</a>
+        </div>
+        <div class="link-list" id="footer-links1">
+            <h3>Popular recipes</h3><br>
+            <a href="#" class="link">Beef Medalion</a><br>
+            <a href="#" class="link">Penne Arrabiata</a><br>
+            <a href="#" class="link">Sweet & Chicken</a><br>
+            <a href="#" class="link">Thai Chicken Curry</a><br>
+            <a href="#" class="link">Fish Curry</a><br>
+        </div>
+        <div class="link-list" id="footer-links2">
+            <h3>Usefull Links</h3><br>
+            <a href="#" class="link">Home</a><br>
+            <a href="#" class="link">Chef Inspirations</a><br>
+            <a href="#" class="link">Recipes</a><br>
+            <a href="#" class="link">Contact</a><br><br>
+        </div>
+    </section>
+        <form action="#" method="POST" class="subscribe">
+        <h2>Subscribe to our Newsletters</h2>
+        <input type="text" class="address" placeholder="Email address">
+        <a href="#" class="btn" id="bottom-button">Subscribe</a>
+        <p class="info">We will not share informations with anyone</p>
+    </form>
+    
+    <footer><p>&copy; Copyright 2019 FoodBlogger. All rights reserved.</p></footer>
+</body>
+</html>

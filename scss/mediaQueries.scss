@@ -1,0 +1,465 @@
+@import 'mixins';
+
+@mixin responsive {
+@include tablet{
+    
+    .mainNavigation{
+    display: block;
+    margin-left: 42%;
+    padding: 0;
+}
+   #header-logo{
+       position: absolute;
+       left: 1%
+ }
+ @include phone{
+     
+     header{
+        width: 100%;
+        height: 41em;
+    .main-content{
+        max-width: 100%;
+        position: relative;
+        padding-top: 0;
+        margin-left: 1em;
+        padding-left: 0;
+        h1{
+            margin-top: 10%;
+            line-height: 1.2em;
+            font-size: 2.3em;
+            margin-bottom: -10%;
+        }
+        p{  padding-top: -2%;
+            margin-top: -5%;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+}}}
+ .main-content{
+     position: absolute;
+     display: block;
+     float: left;
+     padding-top: 10%;
+     max-width: 50%;
+    left: 0;
+    
+    h1{
+        line-height: 1em;
+         font-size: 2em;
+         }
+        
+     p{
+         font-size: .7em;
+         }
+     }
+     .chef{
+         position: absolute;
+         display: block;
+         float:left;
+         top:20%;
+         left: 45%;
+         img{
+             height: 380px;
+             width: 348px;
+         }
+         }
+         @include phone{
+             .chef{
+             top: 53%;
+             left: 12%;
+             img{
+             height: 260px;
+             width: 300px;
+         }}}
+    section{
+        padding-top: 1%;
+        height: 53em;
+        
+        ul{
+            width: 80%;
+            margin-left: 10%;
+        }
+        .activate{
+            padding-left: 0;
+            h1{
+                font-size: 2.2em;
+                line-height: 1.1em;
+            }
+        }
+
+        .chef2{
+            padding-left: 5%;
+            padding-top: 15%;
+            img{
+                height: 320px;
+                width: 280px;
+            }
+        }}
+        @include phone{
+            section{
+                height: 51em;
+                padding-top: 1%;
+                .first{
+                    font-size: 2em;
+                    line-height: 1.2em;
+                }
+                ul{
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        padding: 1em .5em;
+                    }
+                }
+            .chef2{
+                display: none;
+            }
+            .activate{
+                text-align: center;
+                width: 90%;
+                h1{font-size: 1.9em;
+                 padding: 0;}
+            }
+            
+        }}
+    
+    .scnd-section{
+            height: 30em;
+    .carousel{
+           .arrowLeft{
+            left: 4px;
+            }
+        .arrowRight{
+            right: 5px;
+        }
+        
+        .slider{
+                width: 89%;
+                margin-left: 5.5%;
+             
+          }
+    }}
+
+    @include phone{
+        .scnd-section{
+            height: 37em;
+         .carousel{
+              .arrowLeft,.arrowRight{
+               top: 105%;
+               height: 90px;
+               width: 90px;
+                }
+                .arrowLeft{
+                    left: 31%;
+                }
+                .arrowRight{
+                    right: 31%;
+                }
+            .slider{
+              .active{
+                 padding: 10% 0 10% 1em;
+                 .comment{
+                width: 79%;
+                margin-top: 10%;
+                margin-left: 7%;
+                text-align: center;
+                    }
+                    }
+                }
+            }
+        }
+    }
+   
+    .thrd-section{
+        height: 72em;
+        
+        h1{
+            font-size: 1.6em;
+            margin-left: 2em;
+            padding-top: 1em;
+        }
+        .show-all{
+           display: inline;
+           text-align: end;
+            
+            margin-right: 2em;
+        }
+        .container{
+            width: 100%;
+            margin: 2em 0 0 1.5em;
+            justify-content: none;
+           
+            .box{
+               width: 45%;
+               height: 40%;
+               display: block;
+               float: left;
+               margin-top: 1em;
+               @include clearfix;
+               .icons{
+                   margin-top: 10%;
+                   margin-left: 10%;
+                   p{
+                    img{
+                        margin-left: 1em;
+                    }
+                   }
+               }
+               #green-mark-1{
+                display: none;
+            }}
+
+              #box-4{
+                  padding-top: 33%;
+              }
+        }
+    }
+     @include phone{
+         .thrd-section{
+             height: 50em;
+             h1{
+                 margin-left: 8%;
+             }
+             .show-all{
+                 display: none;
+             }
+             .container{
+             .box{
+                .icons{
+                p{
+                 img{
+                    margin-left: 0;
+                    }
+                    }
+                    #right{
+                        display: none;
+                    }
+                }
+                 }
+                #box-4{
+                    padding-top: 29%;
+                }
+             }
+         }
+     }
+    .fourth-section{
+        height: 85em;
+    
+        .article{
+            padding-top: 2em;
+            padding-left: 1em;
+            margin: 0;
+            width: 50%;
+            h1{ 
+                text-align: left;
+                display: block;
+            }
+            h3{
+                margin-top: 1.5em;
+            }
+            .list-block{
+                h4{
+                    margin-top: 1.3em;
+                }
+            }
+            #middle{
+                margin-left: 0;
+                display: block;
+                
+            }
+        }
+        #side-img{
+            width: 49%;
+            margin-top: 50%;
+            img{
+                height: 560px;
+                width: 400px;
+            }
+        }
+        #btn-2{
+            margin-top: 126%;
+            left: 0.5em;
+        }
+        #partners{
+            width: 100%;
+            left: 0;
+            margin-top: 145%;
+        }}
+        @include phone{
+            #middle{
+                position: absolute;
+                margin-left: 0;
+                display: block;
+                margin-top: 30%;
+                width: 50%;
+            }
+            #btn-2{
+               top: 205em;
+                left: 0.5em;}
+            
+            .fourth-section{
+                height: 90em;
+                .article{
+                    position: absolute;
+                    width: 100%;
+                h1{
+                    margin: -2 0 0 0;
+                    line-height: 1.1em;
+                    font-size: 1.9em;
+                    width: 100%;
+                }
+                .list-block{
+                    display: block;
+                    .list{
+                        color: black; 
+                        position: absolute;
+                        line-height: 1.9em;
+                        
+                    }
+                }
+            }
+            #partners{
+                display: none;
+                }
+            #mob-partners{
+                position: relative;
+                display: block;
+                width: 99%;
+                bottom: -25%;
+            }
+            #side-img{
+                position: relative;
+                width: 59%;
+                bottom: -2%;
+                left: 40%;
+                overflow: hidden;
+                img{
+                    height: 440px;
+                    width: 480px;
+                }
+            }
+        }
+         }
+        @include phone{
+        .footer{
+        width: 100%;
+        height: 70em;
+          #footer-content{
+          width: 89%;
+          margin-left: 10%;
+          margin-top: 20%;
+        ;
+          #footer-logo{
+              position: relative;
+              width: 79%;
+             display: block;
+             margin-top: 20%; 
+             padding-top: 5em;
+             left: 50%;
+           }
+            .paragraf{
+                position: absolute;
+                display: block;
+             width: 100%;
+             margin-top: 10%;
+             
+            }
+            a{
+                position: relative;
+                display: block;
+                width: 100%;
+                left: 65%;
+                top: 7em;
+                }
+                #mail{
+                    margin-top: -1em;
+                    margin-bottom: 2em;
+                }
+                
+            }
+            .link-list{
+                position: relative;
+                width: 100%;
+                text-align: center;
+                margin-top: 1em;
+                left: -1.25em;
+               
+            }
+            #footer-links2{
+                margin-top: 1.7em;
+            }
+          }
+         }
+    .footer{
+                #footer-content{
+                margin: 20% 5% 0 1em;
+                display: block;
+                float: left;
+                width: 40%;
+     
+#footer-logo{
+             margin-left: 0;
+             margin-top: 10%;
+    }
+.paragraf{
+          color: $footer_text_color;
+          margin-left: 0;
+          margin-top: 10%;
+          line-height: 1.3em;
+       }
+   a{
+    text-decoration: none;
+    color: $footer_text_color;
+    margin-left: 0;
+    margin-top: 10%;
+    }}
+    .link-list{
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+    }
+    .subscribe{
+        top: 282em;
+        width: 90%;
+        left: 4%;
+        h2{
+            margin: 7% auto 3% 15%;
+        }
+    }
+    @include phone{
+        .subscribe{
+            top: 260em;
+            width: 95%;
+            left: 1%;
+            padding-top:  5;
+            padding-bottom: 15%;
+            h2{
+                margin-left: 15%;
+                font-size: 1.3em;
+                margin-bottom: 5%;
+            }
+            .address{
+                width: 80%;
+               padding: .7em 2.7em;
+               margin-bottom: 15%;
+            }
+            .info{
+                padding-top: 0;
+                margin-top: -20%;
+                margin-left: 30%;
+               
+            }
+           #bottom-button{
+               position: relative;
+               left: 35%;
+               margin-bottom: 5%;
+              
+               
+           }
+            
+        }
+    }
+    }}
+
+

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "latoBold";
+  src: url(../fonts/Lato/Lato-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "latoRegular";
+  src: url(../fonts/Lato/Lato-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "latoItalic";
+  src: url(../fonts/Lato/Lato-RegularItalic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "loraBold";
+  src: url(../fonts/Lora/Lora-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=vars.css.map */
